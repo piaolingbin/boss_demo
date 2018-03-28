@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.boss.boss_demo">
+    <application
+        android:name="com.example.boss.boss_demo.BossApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PushService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+        <service android:name=".PushIntentService"/>
+
+        <activity android:name=".FragmentsActivity">
+        </activity>
+        <activity android:name=".MultiTypeActivity">
+        </activity>
+        <activity android:name=".DragSortActivity">
+        </activity>
+        <activity android:name=".LineChartActivity">
+        </activity>
+        <activity android:name=".PieChartActivity">
+        </activity>
+        <activity android:name=".ArcChartActivity">
+        </activity>
+        <activity android:name=".BrowserActivity">
+        </activity>
+    </application>
+
+</manifest>

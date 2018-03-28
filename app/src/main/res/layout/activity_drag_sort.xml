@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="end"
+    tools:context="com.example.boss.boss_demo.DragSortActivity">
+
+    <com.example.boss.boss_demo.view.DragSortGridView
+        android:id="@+id/dragSortGridView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+    </com.example.boss.boss_demo.view.DragSortGridView>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="开始动画"
+        />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="停止动画"
+        />
+
+</LinearLayout>

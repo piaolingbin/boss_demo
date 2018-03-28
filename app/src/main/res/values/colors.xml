@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- colors defined -->
+    <color name="bg_black_normal">#444951</color>
+    <color name="bg_black_active">#444951</color>
+    <color name="bg_green_normal">#28b095</color>
+    <color name="bg_green_active">#04a690</color>
+    <color name="bg_orange_normal">#eb6328</color>
+    <color name="bg_orange_active">#e9651a</color>
+    <color name="bg_wg_normal">#f9fafc</color>
+    <color name="bg_wg_active">#f7f7f7</color>
+    <color name="bg_common_unable">#e3e3e3</color>
+    <color name="divider_date">#68decf</color>
+    <color name="divider_light">#e0f3f2f1</color>
+    <color name="divider_dark">#c4c7cb</color>
+    <color name="bg_radio_select">#14B9D6</color>
+    <color name="item_text_select">#14B9D6</color>
+    <color name="bg_darked_selected">#eaeaea</color>
+
+    <!-- splash -->
+    <color name="splash_copyright">#444851</color>
+    <color name="splash_bg">#444851</color>
+
+    <!-- text color -->
+    <color name="text_primary">#333333</color>
+    <color name="text_dark_gray">#333333</color>
+    <color name="text_main_tab">#333333</color>
+    <color name="text_num">#333333</color>
+    <color name="text_paid">#787878</color>
+    <color name="text_mid_gray">#333333</color>
+    <color name="text_light_gray">#5e6d81</color>
+    <color name="text_light_hint_gray">#80909cab</color>
+    <color name="text_red">#cc3333</color>
+    <color name="text_green">#339900</color>
+    <color name="text_quit">#eb6418</color>
+    <!-- record account text - -->
+    <color name="text_posi">#cc3333</color>
+
+    <!-- icon flag -->
+    <color name="icon_gray">#CCCCCC</color>
+    <color name="icon_vip_orange">#e9651a</color>
+    <color name="icon_vip_green">#04a690</color>
+
+    <color name="icon_main_tab">#8B9FB0</color>
+
+    <!-- chart line icon -->
+    <color name="icon_chart_orange">#F9B655</color>
+    <color name="icon_chart_red">#E96775</color>
+
+    <!-- ana bg -->
+    <color name="bg_ana">#3E4A59</color>
+    <color name="bg_chart">#3E4A59</color>
+
+    <!-- chart -->
+    <color name="chart_line_color">#14B9D6</color>
+    <color name="chart_point_color">#ffffff</color>
+    <color name="chart_x_text_color">#9AAFC1</color>
+    <color name="chart_y_text_color">#9AAFC1</color>
+    <color name="common_num">#14b9d6</color>
+    <color name="common_bg">#ffffff</color>
+    <!-- system status bar bg -->
+
+    <color name="common_bg_grey">#f7f7f7</color>
+    <color name="common_bg_translucent">#80000000</color>
+    <color name="translucent">#80000000</color>
+    <color name="theme_bg">#323A45</color>
+
+    <!-- new -->
+    <color name="bg_main_tab">#FAFAFA</color>
+
+    <!-- pb color -->
+    <color name="pb_stock">#ed6657</color>
+    <color name="pb_hr">#f9d66b</color>
+    <color name="pb_power">#96bd2c</color>
+    <color name="pb_property">#ed6657</color>
+    <color name="pb_operation">#336c89</color>
+    <color name="pb_amortize">#896d9d</color>
+    <color name="pb_tax">#cf9e50</color>
+    <color name="pb_bg">#ffffff</color>
+
+    <!-- picker -->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <!-- shopeffect chart -->
+    <color name="line_org">#F9b655</color>
+    <color name="line_red">#e96775</color>
+
+    <color name="chart_org">#F9b655</color>
+    <color name="chart_blue">#26ABCC</color>
+
+    <!-- mem -->
+    <color name="mem_card_tab">#f0fcfa</color>
+    <color name="mem_card_total">#eb6418</color>
+    <color name="mem_pie_sub">#febb96</color>
+    <color name="mem_pie_main">#83d4c9</color>
+    <color name="mem_pie_sub_text">#eb6418</color>
+    <color name="mem_pie_main_text">#04a690</color>
+
+    <!-- sale rank -->
+    <color name="bg_sale_percent">#F4AD84</color>
+
+    <!-- tips color -->
+    <color name="text_first">#ff5a27</color>
+    <color name="tip_orange">#ff5a27</color>
+    <color name="tip_item_grey_light">#F2F2F3</color>
+    <color name="tip_flag_blue">#00AABD</color>
+    <color name="tip_flag_gold">#F7BE40</color>
+
+    <!-- round pb -->
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent
+    </color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_grey">#eeeeee</color>
+    <color name="bg_topbar">#f9fafc</color>
+
+    <!--  -->
+    <color name="bg_system">#444951</color>
+
+    <!-- dlg -->
+    <color name="dlg_radio_bg_unselect">#C4C4C4</color>
+
+    <!-- themed dlg -->
+    <color name="light_yellow">#FFF5C1</color>
+    <color name="dark_gray">#5e6d81</color>
+
+    <!-- content bg -->
+    <color name="bg_yellow">#E6A302</color>
+    <color name="bg_blue">#26ABCC</color>
+
+    <color name="bg_unauth_top_fill">#134D79</color>
+
+    <color name="bg_head">#444951</color>
+
+    <color name="bg_revenue_item">#444951</color>
+
+    <!--v2.0.0 color-->
+
+    <color name="pb_progress">#3DC8EA</color>
+
+    <color name="text_selected">#3dc8ea</color>
+    <color name="text_normal">#333333</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_white_80">#ccffffff</color>
+
+    <color name="orange_ff8a3c">#ff8a3c</color>
+    <color name="orange_f6a23f">#f6a23f</color>
+    <color name="orange_f9d66b">#f9d66b</color>
+    <color name="orange_ff8000">#ff8000</color>
+
+    <color name="blue_28af95">#28af95</color>
+    <color name="blue_66b2bd">#66b2bd</color>
+
+    <color name="green_28af95">#96bd2c</color>
+
+    <color name="divider">#e5e5e5</color>
+    <color name="divider_main_tab">#ccd5dc</color>
+    <color name="disable">#d1d9df</color>
+
+    <color name="bg_sidebar">#f6f6f6</color>
+    <color name="bg_content">#ffffff</color>
+    <color name="black_444951">#444951</color>
+
+    <color name="shadow">#D7DEE4</color>
+
+    <color name="divider_sidebar">#49535c</color>
+    <color name="text_side_value">#9fb7ca</color>
+    <color name="bg_side_bar">#B3000000</color>
+
+    <color name="btn_border_light">#80626e78</color>
+    <color name="btn_border_light_pressed">#339fb7ca</color>
+
+    <color name="pb_blue">#28af95</color>
+
+
+    <!--detail-->
+    <color name="pb_mem">#ff8000</color>
+    <color name="pb_mem_not">#c1c1c1</color>
+
+    <color name="pb_store">#96bd2c</color>
+    <color name="pb_out">#66b2bd</color>
+
+    <color name="pb_all">#28af95</color>
+    <color name="pb_all_not">#f9d66b</color>
+
+    <color name="tip_grey">#9FB7CA</color>
+
+    <!-- subject color -->
+    <color name="sb_default">#28AF95</color>
+    <color name="sb_3dc8ea">#3dc8ea</color>
+    <color name="sb_28AF95">#28AF95</color>
+    <color name="sb_F6A23F">#F6A23F</color>
+    <color name="sb_8B9FB0">#8B9FB0</color>
+    <color name="sb_444951">#444951</color>
+    <color name="sb_ff8000">#ff8000</color>
+    <color name="sb_66b2bd">#66b2bd</color>
+    <color name="sb_96bd2c">#96bd2c</color>
+    <color name="sb_f9d66b">#f9d66b</color>
+
+
+    <!--Transparent Overlay-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white_10">#19FFFFFF</color>
+    <color name="transparent_white_20">#33FFFFFF</color>
+    <color name="transparent_white_30">#4CFFFFFF</color>
+    <color name="transparent_white_40">#66FFFFFF</color>
+    <color name="transparent_white_50">#7FFFFFFF</color>
+    <color name="transparent_white_60">#99FFFFFF</color>
+    <color name="transparent_white_70">#B2FFFFFF</color>
+    <color name="transparent_white_80">#CCFFFFFF</color>
+    <color name="transparent_white_90">#E5FFFFFF</color>
+    <color name="transparent_black_5">#0D000000</color>
+    <color name="transparent_black_10">#19000000</color>
+    <color name="transparent_black_20">#33000000</color>
+    <color name="transparent_black_30">#4C000000</color>
+    <color name="transparent_black_40">#66000000</color>
+    <color name="transparent_black_50">#7F000000</color>
+    <color name="transparent_black_60">#99000000</color>
+    <color name="transparent_black_70">#B2000000</color>
+    <color name="transparent_black_80">#CC000000</color>
+    <color name="transparent_black_90">#E5000000</color>
+
+    <color name="theme_split_line">#FFCDCDCD</color>
+    <color name="theme_split_line_light">#E9E9E9</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#FFE6E6E6</color>
+    <color name="dark_grey">#FF8E9AAA</color>
+    <color name="red">#FFEC584E</color>
+    <color name="green">#FF5CB75C</color>
+    <color name="brown">#FFBF8F68</color>
+    <color name="dark_brown">#FF89552E</color>
+
+    <color name="touch_overlay">@color/transparent_white_20</color>
+    <color name="disabled_overlay">@color/transparent_white_50</color>
+    <color name="login_bg">#444951</color>>
+    <color name="green_normal">#28b095</color>
+    <color name="chart_green">#1d8c8c</color>
+    <color name="green_active">#04a690</color>
+    <color name="base_red">#E93030</color>
+    <color name="base_red_active">#b90b29</color>
+    <color name="base_grey">#F3F5F7</color>
+    <color name="rcv_top_cell_bg">#F6F6F6</color>
+    <color name="chart_bg">#23476b</color>
+    <color name="chart_front">#99CC00</color>
+    <color name="takeout_bg">#222a3d</color>
+    <color name="takeout_line">#dbdbdb</color>
+    <color name="B9C2C9">#B9C2C9</color>
+    <color name="C0CAD1">#C0CAD1</color>
+    <color name="FDFDFD">#FDFDFD</color>
+
+    <color name="colorCirclebg">#100000ff</color>
+    <color name="colorStart">#1212F6</color>
+    <color name="colorEnd">#F212C6</color>
+</resources>

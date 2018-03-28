@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏时间按钮高度-->
+    <dimen name="header_date_button_height">30dp</dimen>
+    <dimen name="common_red_circle_btn_radius">5dp</dimen>
+    <dimen name="common_red_circle_btn_radius2">20dp</dimen>
+</resources>

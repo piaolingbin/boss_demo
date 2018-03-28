@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carson_Ho</title>
+
+    <script>
+
+    function clickprompt(){
+    // 调用prompt（）
+    var result=prompt("js://webview?arg1=111&arg2=222");
+    //alert("demo " + result);
+    }
+
+    function callJs(msg){
+        alert(msg + ":android call js success!");
+    }
+
+      </script>
+</head>
+
+<!-- 点击按钮则调用clickprompt()  -->
+<body>
+<div align="center">
+<button type="button" id="button1" onclick="clickprompt()" style="width:500px;height:100px;font-size:30px;">点击调用Android代码</button>
+</div>
+</body>
+</html>
