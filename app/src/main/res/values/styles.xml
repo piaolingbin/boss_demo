@@ -8,6 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="style_transparent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!--控制头部据appbar的样式-->
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.NoActionBar"></style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!--用于控制toolbar溢出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
     <style name="StyledIndicators" parent="@style/AppTheme">
         <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
     </style>
@@ -28,6 +46,7 @@
         <item name="android:typeface">monospace</item>
         <!--<item name="android:textColor">@drawable/indicator_text</item>-->
     </style>
+
     <style name="left_circle_rb">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/header_date_button_height</item>
@@ -39,6 +58,7 @@
         <item name="android:textColor">@drawable/selector_main_date_btn_color</item>
         <item name="android:textSize">12sp</item>
     </style>
+
     <style name="middle_square_rb">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/header_date_button_height</item>
@@ -50,6 +70,7 @@
         <item name="android:textColor">@drawable/selector_main_date_btn_color</item>
         <item name="android:textSize">12sp</item>
     </style>
+
     <style name="right_circle_rb">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/header_date_button_height</item>
@@ -61,6 +82,7 @@
         <item name="android:textColor">@drawable/selector_main_date_btn_color</item>
         <item name="android:textSize">12sp</item>
     </style>
+
     <style name="circle_rb">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/header_date_button_height</item>
@@ -73,6 +95,7 @@
         <item name="android:textColor">@drawable/selector_main_date_btn_color</item>
         <item name="android:textSize">10sp</item>
     </style>
+
     <style name="common_dlg" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -81,6 +104,11 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>

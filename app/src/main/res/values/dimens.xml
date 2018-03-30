@@ -4,4 +4,7 @@
     <dimen name="header_date_button_height">30dp</dimen>
     <dimen name="common_red_circle_btn_radius">5dp</dimen>
     <dimen name="common_red_circle_btn_radius2">20dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

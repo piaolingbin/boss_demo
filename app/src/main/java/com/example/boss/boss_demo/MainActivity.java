@@ -94,16 +94,23 @@ public class MainActivity extends AppCompatActivity {
                 String patchFileString = Environment.getExternalStorageDirectory()
                         .getAbsolutePath() + APATCH_PATH;
                 TinkerInstaller.onReceiveUpgradePatch(getApplication(), patchFileString);
-                //TextView tvTinker = (TextView) findViewById(R.id.tv_tinker);
-                //tvTinker.setText("哈哈，修复成功了！");
+                TextView tvTinker = (TextView) findViewById(R.id.tv_tinker);
+                tvTinker.setText("哈哈，修复成功了！");
                 EditText etName = (EditText) findViewById(R.id.et_name);
-                //etName.setText("哦哟，又成功了！");
+                etName.setText("哦哟，又成功了！");
                 File file = new File(patchFileString);
                 if (file.exists()) {
                     Log.i(TAG, "补丁包存在>>>>" + patchFileString);
                 } else {
                     Log.i(TAG, "补丁包不存在");
                 }
+            }
+        });
+
+        findViewById(R.id.btn_banner).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BannerActivity.class));
             }
         });
         NewbieGuide.with(this)//activity or fragment

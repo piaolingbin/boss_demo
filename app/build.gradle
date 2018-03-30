@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.tencent.tinker.patch'
+//apply plugin: 'com.tencent.tinker.patch'
 apply plugin: 'android-apt'
 
 android {
@@ -14,7 +14,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86_64","x86"
+            abiFilters "armeabi", "armeabi-v7a", "x86_64", "x86"
         }
         manifestPlaceholders = [
                 GETUI_APP_ID    : "D8KvUkphdj7ha3D5iBmCw5",
@@ -37,7 +37,11 @@ dependencies {
     })
     compile project(':hellocharts-library')
     //compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    //可选，用于生成application类
+    //tinker的核心库
     compile 'com.android.support:appcompat-v7:26.+'
+    compile "com.android.support:design:26.0.0-alpha1"
+    compile "com.android.support:appcompat-v7:26.0.0-alpha1"
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.getui:sdk:2.11.1.0'
     compile 'com.android.support:support-v4:26.0.0-alpha1'
@@ -48,13 +52,11 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.1.0-RC'
     compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
     compile 'com.github.huburt-Hu:NewbieGuide:v1.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.tencent.tinker:tinker-android-lib:1.9.1'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile 'com.android.support:multidex:1.0.1'
-    //可选，用于生成application类
-    provided('com.tencent.tinker:tinker-android-anno:1.9.1')
-    //tinker的核心库
-    compile('com.tencent.tinker:tinker-android-lib:1.9.1')
+    provided 'com.tencent.tinker:tinker-android-anno:1.9.1'
 }
 
 /**Tinker 相关配置----------------开始-----------------------------------*/
@@ -84,10 +86,9 @@ def bakPath = file("${buildDir}/bakApk/")
  */
 ext {
     /**
-     * 出于某种原因，你可能想要忽略修改构建，例如即时运行调试构建
-     * for some reason, you may want to ignore tinkerBuild, such as instant run debug build?
+     * 是否打开tinker的功能。
      */
-    tinkerEnabled = true
+    tinkerEnabled = false
 
     /** 对于正常的构建
      *  for normal build
@@ -96,27 +97,27 @@ ext {
     /**
      * 老的apk去构建补丁的apk
      * old apk file to build patch apk
-     * E:\demo\boss_demo\app\build\bakApk\app-debug-0328-17-32-33.apk
+     * E:\demo\boss_demo\app\build\bakApk\app-debug-0328-18-17-35.apk
      */
 
-    tinkerOldApkPath = "${bakPath}/app-debug-0328-17-32-33.apk"
+    tinkerOldApkPath = "${bakPath}/app-debug-0328-18-17-35.apk"
     /**
      *  构建补丁apk的混淆映射文件
      *  proguard mapping file to build patch apk
      */
-    tinkerApplyMappingPath = "${bakPath}/app-debug-0328-17-32-33-mapping.txt"
+    tinkerApplyMappingPath = "${bakPath}/app-debug-0328-18-17-35-mapping.txt"
     /**
      * 构建补丁apk时，R.txt必须输入资源文件是否改变
      * resource R.txt to build patch apk, must input if there is resource changed
      */
 
-    tinkerApplyResourcePath = "${bakPath}/app-debug-0328-17-32-33-R.txt"
+    tinkerApplyResourcePath = "${bakPath}/app-debug-0328-18-17-35-R.txt"
 
     /**
      * 只是用于构建所有的特点，如果不，可以忽略这一领域
      * only use for build all flavor, if not, just ignore this field
      */
-    tinkerBuildFlavorDirectory = "${bakPath}/app-0328-17-32-33"
+    tinkerBuildFlavorDirectory = "${bakPath}/app-0328-18-17-35"
 }
 
 
@@ -298,7 +299,7 @@ if (buildWithTinker()) {
         lib {
             /**
              * 可选的，默认[]
-             *apk预处理修复补丁
+             * apk预处理修复补丁
              * 在assets的library中，我们就会在补丁目录中恢复他们
              * 你可以在tinker中得到他的结果
              * optional，default '[]'
